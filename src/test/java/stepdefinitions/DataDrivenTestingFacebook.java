@@ -40,6 +40,7 @@ public class DataDrivenTestingFacebook {
 	@Then("user navigate to home page")
 	public void user_navigate_to_home_page() {
 	   System.out.println("Home Page");
+	   driver.quit();
 	}
 }
 

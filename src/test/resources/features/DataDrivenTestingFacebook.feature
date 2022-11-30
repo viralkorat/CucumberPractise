@@ -1,6 +1,6 @@
 Feature: Test login functionality
 
-  @DataDriven
+  @DataDriven 
   Scenario Outline: Check login is successful with valid credentials
     Given user is on login page
     And <username> and <password> are entered by user
@@ -10,4 +10,4 @@ Feature: Test login functionality
     Examples: 
       | username | password |
       | Admin    | admin123 |
- 
+      | Viral    | test123  |
