@@ -8,12 +8,13 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features= "src/test/resources/features", 
 glue= {"stepdefinitions"}, 
-tags= {"@DataDriven or ~@SmokeTest"},
+tags= {"@DataDriven or @SmokeTest"},
 monochrome=true,
 strict=true,
-plugin = { "pretty", "html:target/HtmlReports/report.html",
+plugin = {"pretty", "html:target/HtmlReports/report.html",
 		"json:target/JSONReports/report.json",
 		"junit:target/JUnitReports/report.xml"})
+
 public class TestRunner {
 
 }
@@ -21,3 +22,7 @@ public class TestRunner {
 
 //Multiple Feature File
 //{"src/test/resources/features","src/test/resources/features2"}
+
+/*plugin = { "pretty", "html:target/HtmlReports/report.html",
+		"json:target/JSONReports/report.json",
+		"junit:target/JUnitReports/report.xml"}*/
